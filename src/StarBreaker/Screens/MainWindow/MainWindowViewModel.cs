@@ -15,6 +15,7 @@ public partial class MainWindowViewModel : ViewModelBase
         [
             App.Current.Services.GetRequiredService<P4kTabViewModel>(),
             App.Current.Services.GetRequiredService<DataCoreTabViewModel>(),
+            App.Current.Services.GetRequiredService<BlueprintTabViewModel>()
         ];
         
         CurrentPage = _pages.First();
